@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mi Blog de Ciberseguridad</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Mi Blog de Ciberseguridad</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Publicaciones</a></li>
+                <li><a href="#">Comentarios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Publicaciones Anónimas</h2>
+        <form action="Cpublicacion.php" method="post">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo">
+            <label for="contenido">Contenido</label>
+            <textarea id="contenido" name="contenido"></textarea>
+            <input type="submit" value="Publicar">
+        </form>
+        <h2>Comentarios Anónimos</h2>
+        <ul id="comentarios"></ul>
+        <form>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="comentario">Comentario</label>
+            <textarea id="comentario" name="comentario"></textarea>
+            <input type="submit" value="Comentar">
+        </form>
+    </main>
+    <footer>
+        <p>Derechos Reservados &copy; 2023 - Mi Blog de Ciberseguridad</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
